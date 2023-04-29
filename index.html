@@ -24,7 +24,7 @@
           const totalCommits = data.reduce((acc, contributor) => acc + contributor.total, 0);
           const totalContributions = data.reduce((acc, contributor) => acc + contributor.weeks.reduce((acc2, week) => acc2 + week.c, 0), 0);
           const result = document.getElementById("result");
-          result.innerHTML = `Total Commits: ${totalCommits}<br>Total Contributions: ${totalContributions}`;
+          result.innerHTML = `Total Commits: ${totalCommits}`;
         })
         .catch(error => {
           const result = document.getElementById("result");
